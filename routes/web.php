@@ -46,3 +46,8 @@ Route::group(['namespace'=>'Admin','prefix'=>'admin'],function(){
 		'uses'=>'GoodsController@destroy',
 	]);
 });
+Route::group(['namespace'=>'Index','prefix'=>'index'],function (){
+
+});
+
+Route::get('/','Index\IndexController@index');
